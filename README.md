@@ -21,4 +21,4 @@ Set the environment variable:
 `export GOOGLE_APPLICATION_CREDENTIALS="path/to/google_credentials.json"`
 
 Run application:
-python3 main.py /path_to_prescription_image/prescription_image.png
+`python3 main.py /path_to_prescription_image/prescription_image.png`
