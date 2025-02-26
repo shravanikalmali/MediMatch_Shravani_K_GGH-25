@@ -28,9 +28,7 @@ Run application:
 
 
 ## Idea and Approach
-After extensive research, GPT-4o provided the best OCR results, but due to API limitations, I explored Google's advancements in prescription reading. Google Lens showed promising results, but as it lacks an API, I opted for **Google Vision AI API** for text extraction. The raw OCR output was preprocessed to clean and structure the extracted text. 
-
-The extracted text contained both diagnoses and medications, requiring classification. To improve accuracy, I separated diagnoses from medicines and mapped identified medicines to corresponding diagnoses for validation. To refine medicine identification, I **fine-tuned a transformer-based model** using a **2025 drug dataset**, enabling precise medicine name extraction. These identified medicines are cross-checked with the pharmacy’s database for availability, allowing for automated order generation.
+After extensive research and exploring various open-source OCR toos like EasyOCR, Tesseract, Clip, etc I discovered Google lens's advancements in prescription reading. Google Lens showed promising results, so I opted for **Google Vision AI API** for text extraction from the prescription images. The raw OCR output was then preprocessed to clean and structure the extracted text. The extracted text contained both diagnoses and medications, requiring classification. To improve accuracy, I separated diagnoses from medicines and mapped identified medicines to corresponding diagnoses for validation at a later stage. To refine medicine identification, I **fine-tuned a transformer-based model** using a latest drug dataset from Kaggle. This fine-tuning enabling precise medicine name extraction. These identified medicines are then cross-checked with the pharmacy’s database for availability, enabling an automated order generation.
 
 ## Technologies Used
 - **Google Vision AI API** – OCR for extracting text from handwritten prescriptions.
