@@ -74,7 +74,7 @@ After extensive research and exploring various open-source OCR toos like EasyOCR
 [ Automated Order Generation ]  
 
 
-#Example run -
+## Example run -
 
 ### Expected Output
 
