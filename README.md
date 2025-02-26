@@ -14,6 +14,8 @@ source venv/bin/activate  # On Windows use venv\Scripts\activate`
 Install dependencies:
 `pip install -r requirements.txt`
 
+Add your credentials in the .env file
+
 Set up Google Vision AI:
 Obtain API credentials from Google Cloud Console.
 Save the credentials as google_credentials.json.
