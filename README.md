@@ -4,8 +4,7 @@
 MediMatch is an AI-powered pharmacist’s assistant designed to extract medicine names from handwritten prescriptions using Google Vision AI OCR, classify them using a fine-tuned model, and validate them against a pharmacy’s database for order generation. This project aims to reduce manual errors and enhance pharmacy workflow efficiency.
 
 Clone the repository:
-   `git clone <repository-link>
-    cd MediMatch`
+   `git clone https://github.com/shravanikalmali/MediMatch_Shravani_K_GGH-25.git`
 
 Create and activate a virtual environment:
 `python -m venv venv
