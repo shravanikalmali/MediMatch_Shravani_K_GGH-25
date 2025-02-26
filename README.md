@@ -73,3 +73,77 @@ After extensive research and exploring various open-source OCR toos like EasyOCR
            v  
 [ Automated Order Generation ]  
 
+
+Example run-
+
+## Expected Output
+
+`Grilinctus
+Dolo 650
+Relent`
+
+## Raw OCR Data
+
+`Shravan
+21/2/2015
+Tayes female
+CARE
+HOSPITALS
+Con
+Mild. Cough
+Jever on
+W
+Stomach ache.
+Ro. Typ.
+Grifinitus o
+Vitals
+x 3 days
+Rp:
+103
+(0) Tab. Dolo 650
+P12:
+50
+* зевар
+spo₂:
+Tab. Relent
+"X3 day
+temp: 97-0F
+Adhur
+4 Monitor vitals
+વિ
+Sujon
+wear
+80
+a mask
+U take rest for a day,`
+
+## Cleaned Text
+
+`shravan<<<nl>>>21/2/2015<<<nl>>>tayes female<<<nl>>>care<<<nl>>>hospitals<<<nl>>>con<<<nl>>>mild. cough<<<nl>>>jever on<<<nl>>>w<<<nl>>>stomach ache.<<<nl>>>ro. typ.<<<nl>>>grifinitus o<<<nl>>>vitals<<<nl>>>x 3 days<<<nl>>>rp:<<<nl>>>103<<<nl>>>0 tab. dolo 650<<<nl>>>p12:<<<nl>>>50<<<nl>>> зевар<<<nl>>>spo₂:<<<nl>>>tab. relent<<<nl>>>x3 day<<<nl>>>temp: 97-0f<<<nl>>>adhur<<<nl>>>4 monitor vitals<<<nl>>>વ<<<nl>>>sujon<<<nl>>>wear<<<nl>>>80<<<nl>>>a mask<<<nl>>>u take rest for a day,`
+> ⚠️ **Note:** The cleaned text still contains some noise, including unnecessary words and formatting artifacts (`<<<nl>>>`). Further improvements in text preprocessing are needed to refine the output by further fine-tuning the model to predict the words better.
+
+
+## Validated Medicines
+`wear
+  dolo 650
+  vitals
+  mild
+  sujon
+  hospitals
+  tab
+  relent
+  typ
+  spo₂
+  cough
+  зевар
+  care
+  adhur
+  shravan
+  p12
+  con
+  temp`
+
+> ⚠️ **Note:** The validated medicines list includes non-medicinal terms, indicating a need for improved filtering by training the model further as the model is trained on very limited dataset currently
+
+
+
