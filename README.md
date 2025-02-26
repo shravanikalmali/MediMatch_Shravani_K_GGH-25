@@ -31,21 +31,21 @@ Run application:
 After extensive research and exploring various open-source OCR toos like EasyOCR, Tesseract, Clip, etc I discovered Google lens's advancements in prescription reading. Google Lens showed promising results, so I opted for **Google Vision AI API** for text extraction from the prescription images. The raw OCR output was then preprocessed to clean and structure the extracted text. The extracted text contained both diagnoses and medications, requiring classification. To improve accuracy, I separated diagnoses from medicines and mapped identified medicines to corresponding diagnoses for validation at a later stage. To refine medicine identification, I **fine-tuned a transformer-based model** using a latest drug dataset from Kaggle. This fine-tuning enabling precise medicine name extraction. These identified medicines are then cross-checked with the pharmacy’s database for availability, enabling an automated order generation.
 
 ## Technologies Used
-Python
-Google Cloud Vision API (OCR)
-Transformers (Hugging Face)
-NLTK (Natural Language Toolkit)
-Regex (Regular Expressions)
-Hugging Face Datasets
-Hugging Face Trainer API
-PyTorch
-Evaluate (Hugging Face)
-Pandas
-Data Collator with Padding (Hugging Face)
-Fuzzy Matching
-sys & os (Python Standard Library)
-Grammar Correction Model (prithivida/grammar_error_correcter_v1) -     https://huggingface.co/prithivida/grammar_error_correcter_v1
-Bio_ClinicalBERT (Pre-trained Model) - (emilyalsentzer/Bio_ClinicalBERT) - https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT
+- Python
+- Google Cloud Vision API (OCR)
+- Transformers (Hugging Face)
+- NLTK (Natural Language Toolkit)
+- Regex (Regular Expressions)
+- Hugging Face Datasets
+- Hugging Face Trainer API
+- PyTorch
+- Evaluate (Hugging Face)
+- Pandas
+- Data Collator with Padding (Hugging Face)
+- Fuzzy Matching
+- sys & os (Python Standard Library)
+- [Grammar Correction Model (prithivida/grammar_error_correcter_v1)](https://huggingface.co/prithivida/grammar_error_correcter_v1)
+- [Bio_ClinicalBERT (Pre-trained Model) - (emilyalsentzer/Bio_ClinicalBERT)](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)
 
 
 ## Workflow of MediMatch
