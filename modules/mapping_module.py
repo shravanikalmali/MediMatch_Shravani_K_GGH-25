@@ -18,22 +18,6 @@ def correct_medicine_name(token):
     token_norm = token.translate(str.maketrans('', '', string.punctuation))
     return token_norm
 
-import nltk
-import string
-nltk.download('stopwords', quiet=True)
-from nltk.corpus import stopwords
-
-# Use NLTK's English stopwords as a dynamic blacklist.
-dynamic_blacklist = set(stopwords.words('english'))
-
-import nltk
-import string
-nltk.download('stopwords', quiet=True)
-from nltk.corpus import stopwords
-
-# Use NLTK's English stopwords as a dynamic blacklist.
-dynamic_blacklist = set(stopwords.words('english'))
-
 def post_process_candidates(candidate_meds, min_length=3, max_length=30):
     """
     Applies post-processing rules to filter candidate medicine names:
