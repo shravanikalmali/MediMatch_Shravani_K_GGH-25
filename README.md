@@ -37,7 +37,6 @@ After extensive research and exploring various open-source OCR toos like EasyOCR
 - **Regex & NLP techniques** – Text cleaning and structuring.
 - **Hugging Face Transformers (Fine-tuned model)** – Classification of diagnoses and medicines.
 - **CSV-based validation** – Cross-checking medicine names with pharmacy inventory.
-- **Flask/FastAPI** – Backend API for seamless processing.
 
 ## Workflow of MediMatch
 
